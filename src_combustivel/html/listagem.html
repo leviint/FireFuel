@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/carroListagem.css">
+    <title>Resultado</title>
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+</head>
+<body>
+    <div class="carro"></div>
+    <main>
+            <hr>
+            <div class="title">
+                <h2>Custo Total da Viagem</h2>
+                <button id="return">Retornar</button>
+            </div>
+            <hr>
+        <div class="alert">
+            <ol id="listaCalculo"></ol>
+        </div>
+    </main>
+    <br>
+    <div class="estrada"></div>
+    <script src="../js/firebaseconfig.js"></script>
+    <script src="../js/listagem.js"></script>
+</body>
+</html>

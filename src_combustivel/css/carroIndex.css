@@ -1,0 +1,40 @@
+@keyframes moverCarro {
+    0% { transform: translateX(0vw); }
+    40% { transform: translateX(65vw); }
+    80% { transform: translateX(65vw); }
+    100% { transform: translateX(100vw); }
+    100% { transform: translateX(120vw); }
+}
+
+.carro {
+    position: fixed;
+    bottom: 5vh;
+    left: -20vw;
+    width: 10vw;
+    height: 50vh;
+    background: url('../img/carro.png') no-repeat center / contain;
+    z-index: -1;
+    animation: moverCarro 5s linear infinite;
+}
+
+.gasolina {
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    width: 10vw;
+    height: 50vh;
+    background: url('../img/gasolina.png') no-repeat center / contain;
+    z-index: -2;
+    transform: translate(-50%, -50%);
+}
+
+.estrada {
+    position: fixed;
+    top: 75%;
+    left: 50%;
+    width: 500vw;
+    height: 50vh;
+    background: url('../img/estrada.png') repeat-x center / auto 100%;
+    z-index: -3;
+    transform: translate(-50%, -50%);
+}
